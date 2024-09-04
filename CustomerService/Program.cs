@@ -10,7 +10,10 @@ namespace CustomerService
     {
         static void Main(string[] args)
         {
-        
+            Bootstrap bootstrap = new Bootstrap();
+            bootstrap.CounterLoadCheck();
+            Console.WriteLine("****************************************");
+            bootstrap.TimeLoadCheck();
         }
     }
 }
