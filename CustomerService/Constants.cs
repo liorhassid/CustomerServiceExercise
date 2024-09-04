@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace CustomerService
 {
-    public interface ICustomersLine
+    public static class Constants
     {
-        void AddToLine(Customer customer);
+        public const int CustomersInLinePerLoadIndex = 5;
 
-        Customer RemoveFromLine();
-
-        int Length();
+        public const int MaxLoadIndex = 10;
     }
 }

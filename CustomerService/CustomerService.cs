@@ -17,12 +17,12 @@ namespace CustomerService
             customersLine = newLine;
         }
 
-        public void AddToLine(Customer customer)
+        public virtual void AddToLine(Customer customer)
         {
             customersLine.AddToLine(customer);
         }
 
-        public Customer RemoveFromLine()
+        public virtual Customer RemoveFromLine()
         {
             return customersLine.RemoveFromLine();
         }
